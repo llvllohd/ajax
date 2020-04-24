@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Projects using Ajax</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="container my-3">
+
+        <div class="card">
+            <div class="card-body">
+                <h2>Create a projects</h2>
+                <hr>
+                <form class="form" id="projectForm" autocomplete="off">
+                    <div class="form-group">
+                        <h5>Enter project name</h5>
+                        <input type="text" class="form-control" id="name" style="font-size: 19px;">
+                    </div>
+                    <div class="form-group">
+                        <h5>Image link</h5>
+                        <input type="text" class="form-control" id="image" style="font-size: 19px;">
+                    </div>
+                    <div class="form-group">
+                        <h5>Description</h5>
+                        <textarea class="form-control" id="description" rows="3" style="font-size: 19px;"></textarea>
+                    </div>
+                    <button type="submit" class="btn  btn-dark">Save project using xhr object</button>
+                    <button type="submit" id="btnSave" class="btn btn-dark">Save project using fetch</button>
+                    <button type="submit" id= "btnSaveJquery" class="btn btn-dark">Save project using jquery</button>
+
+                </form>
+            </div>
+        </div>
+
+        <hr>
+        <h2>View created project</h2>
+        <hr>
+        <button type="button" id="btnViewX" class="btn btn-dark">View project using xhr object</button>
+        <button type="button" id="btnViewF" class="btn btn-dark">View project using fetch</button>
+        <button type="button" id="btnViewJ" class="btn btn-dark">View project using jquery</button>
+        <hr>
+
+
+        <div class="container row" id="cardData"> </div>
+
+    </div>
+
+    <div class="main-container" id="main-container" style="display: none;">
+        
+    </div>
+
+    <script src="./js/jquery.3.5.0.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/fetch.js"></script>
+    <script src="./js/jquery.js"></script>
+</body>
+
+</html>
